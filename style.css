@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+    font-family: 'Muli', sans-serif;
+
+}
+
+#game-objects{
+    display: flex;
+    justify-content: center;
+}
+
+#game-objects button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+    margin:10px;
+    background-color: #3498db;
+    color: white;
+    
+}
+
+#game-objects button:disabled{
+    background-color: #e0e0e0;
+    color: black;
+}
+
+
+#play{
+    display: grid;
+    /* grid-template-columns: repeat(2,50px); */
+    justify-content: center;
+}
+
+#play input, #play button{
+    font-size: 1.5rem;
+    border-color: blue;
+    border-width: 5px;
+    color:red;
+}
+
+#play button{
+    background-color: green;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+}
+
+#play button:disabled{
+    background-color: red;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+    color:black
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+#drum, div[data-ns-test="computer-choose"]{
+text-align: center;
+font-size: 2rem;
+}
+
+#results{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 160px);
+    margin: 20px;
+}
+
+#results span{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#results span div{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+#final{
+    text-align: center;
+    font-size: 1.5rem;
+    /* margin:  50px; */
+}
