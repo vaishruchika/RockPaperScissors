@@ -8,44 +8,47 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div id="play">
-        <label>Enter no of turns</label>
-        <input type="number" data-ns-test="game-number" placeholder="No of turns" required>
-        <br><br>
-        <button data-ns-test="play-game">Play</button>
-        <br><br>
+    <div class="container">
+
+        <div id="play">
+            <label>Enter no of turns</label>
+            <input type="number" data-ns-test="game-number" placeholder="No of turns" required>
+            <br><br>
+            <button data-ns-test="play-game">Play</button>
+            <br><br>
+        </div>
+        <div id="game-objects">
+            <button class="selections" data-ns-test="rock" disabled>ROCK</button>
+            <button class="selections" data-ns-test="paper" disabled>PAPER</button>
+            <button class="selections" data-ns-test="scissors" disabled>SCISSORS</button>
+        </div>
+        
+        <div id="drum">Computer Chose
+            <span data-ns-test="computer-choose"></span>
+        </div>
+        
+        
+        <div id="results">
+            <span>Computer
+                <div data-ns-test="computer-points">0</div>
+            </span>
+            <span>User
+                <div data-ns-test="user-points">0</div>
+        </span>
+        <span>Rounds Left
+            <div data-ns-test="rounds-left">0</div>
+        </span>
     </div>
-    <div id="game-objects">
-        <button class="selections" data-ns-test="rock" disabled>ROCK</button>
-        <button class="selections" data-ns-test="paper" disabled>PAPER</button>
-        <button class="selections" data-ns-test="scissors" disabled>SCISSORS</button>
+    <div id="final">
+        <div>Round Results
+            <div data-ns-test="round-result"></div>
+            
+            <br><br>
+            <div>Game Results
+                <div data-ns-test="game-result" style="display: hidden"><div>    
+                </div>
+            </div>
     </div>
-
-    <div id="drum">Computer Chose
-    <span data-ns-test="computer-choose"></span>
-    </div>
-
-
-    <div id="results">
-    <span>Computer
-    <div data-ns-test="computer-points">0</div>
-    </span>
-    <span>User
-    <div data-ns-test="user-points">0</div>
-    </span>
-    <span>Rounds Left
-    <div data-ns-test="rounds-left">0</div>
-    </span>
-</div>
-<div id="final">
-<div>Round Results
-<div data-ns-test="round-result"></div>
-
-<br><br>
-<div>Game Results
-<div data-ns-test="game-result" style="display: hidden"><div>    
-</div>
-</div>
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

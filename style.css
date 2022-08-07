@@ -3,9 +3,25 @@
 *{
     margin: 0;
     padding: 0;
-    background-color:antiquewhite;
     font-family: 'Muli', sans-serif;
+}
 
+body{
+    background-image: url("https://wallpapercave.com/wp/wp8122053.jpg");
+
+}
+
+.container{
+    margin: 40px auto;
+    width: 600px;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    position:relative;
 }
 
 #game-objects{
